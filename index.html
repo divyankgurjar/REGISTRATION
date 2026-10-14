@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="hi">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#10152b">
+  <title>Live Webinar Registration</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <main class="page-shell">
+    <nav class="topbar" aria-label="Main navigation">
+      <a class="brand" href="#home" aria-label="Webinar home">
+        <span class="brand-mark" aria-hidden="true">W</span>
+        <span>WEB<span class="brand-accent">INAR</span></span>
+      </a>
+      <span class="top-note"><span class="live-dot"></span> LIVE WEBINAR</span>
+    </nav>
+
+    <section class="countdown-card" aria-label="Registration countdown">
+      <span class="countdown-label">REGISTRATION COUNTDOWN · PER VISIT</span>
+      <strong id="countdown" role="timer" aria-live="off">35:00</strong>
+    </section>
+
+    <section class="hero" id="home">
+      <div class="hero-copy">
+        <p class="eyebrow"><span class="eyebrow-line"></span> AAPKA AGALA KADAM YAHAN SE</p>
+        <h1>Seekhiye kuch naya.<br><span>Badhiye aage.</span></h1>
+        <p class="hero-description">Hamare live webinar ke liye apni jagah register karein. Details submit karte hi WhatsApp par registration message khul jayega.</p>
+        <div class="hero-points">
+          <div class="point"><span class="point-icon">✦</span><span>Live session</span></div>
+          <div class="point"><span class="point-icon">✦</span><span>Sabhi ke liye</span></div>
+          <div class="point"><span class="point-icon">✦</span><span>WhatsApp par registration</span></div>
+        </div>
+        <div class="hero-decoration" aria-hidden="true">
+          <span class="orbit orbit-one"></span>
+          <span class="orbit orbit-two"></span>
+          <span class="sparkle sparkle-one">✳</span>
+          <span class="sparkle sparkle-two">✦</span>
+          <div class="play-card"><span class="play-icon">▶</span><span>LIVE<br>WEBINAR</span></div>
+        </div>
+      </div>
+
+      <div class="form-card" id="register">
+        <div class="card-heading">
+          <div>
+            <p class="card-kicker">APNI JAGAH PAKKI KAREIN</p>
+            <h2>Webinar Registration</h2>
+          </div>
+          <span class="form-badge" aria-hidden="true">↗</span>
+        </div>
+        <p class="card-description">Neeche apni details bharein — aage ki process WhatsApp par hogi.</p>
+
+        <form id="registrationForm">
+          <label for="name">Aapka naam</label>
+          <input id="name" name="name" type="text" placeholder="Jaise: Rahul Sharma" autocomplete="name" required>
+
+          <div class="form-row">
+            <div class="field-group">
+              <label for="phone">Mobile number</label>
+              <input id="phone" name="phone" type="tel" placeholder="10 digit number" autocomplete="tel" inputmode="numeric" pattern="[0-9+()\-\s]{10,15}" required>
+            </div>
+            <div class="field-group">
+              <label for="age">Age</label>
+              <input id="age" name="age" type="number" placeholder="Aapki age" min="10" max="100" required>
+            </div>
+          </div>
+
+          <label for="email">Gmail / Email</label>
+          <input id="email" name="email" type="email" placeholder="you@example.com" autocomplete="email" required>
+          <p class="field-hint">Apna sahi email address darj karein.</p>
+
+          <label for="profession">Aapka profession</label>
+          <select id="profession" name="profession" required>
+            <option value="" disabled selected>Apna profession select karein</option>
+            <option value="Student">Student</option>
+            <option value="Teacher">Teacher</option>
+            <option value="Working professional">Working professional</option>
+            <option value="Business owner">Business owner</option>
+            <option value="Other">Other</option>
+          </select>
+
+          <button type="submit">WhatsApp par register karein <span aria-hidden="true">→</span></button>
+          <p class="privacy-note"><span aria-hidden="true">🔒</span> Aapki details sirf registration ke liye use hongi.</p>
+          <p class="form-message" id="formMessage" role="status" aria-live="polite"></p>
+        </form>
+      </div>
+    </section>
+
+    <section class="price-panel" aria-label="Webinar price">
+      <div>
+        <p class="card-kicker">WEBINAR PRICE</p>
+        <p class="offer-price">₹99 <s>₹999</s></p>
+      </div>
+      <p class="price-note">Aaj ke liye webinar price ₹99, regular price ₹999.</p>
+    </section>
+
+    <section class="about-section" aria-labelledby="about-title">
+      <p class="card-kicker">HAMARE BAARE MEIN</p>
+      <h2 id="about-title">About Us</h2>
+      <div class="about-video">
+        <iframe
+          src="https://www.youtube-nocookie.com/embed/tWH1_B8Jekk"
+          title="About us video"
+          loading="lazy"
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+          referrerpolicy="strict-origin-when-cross-origin"
+          allowfullscreen></iframe>
+      </div>
+    </section>
+
+    <footer class="footer">
+      <span>Apni learning journey aaj hi shuru karein.</span>
+      <span class="footer-tag">LEARN · GROW · REPEAT</span>
+    </footer>
+  </main>
+  <script src="script.js"></script>
+</body>
+</html>
